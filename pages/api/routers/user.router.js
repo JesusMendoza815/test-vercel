@@ -21,7 +21,8 @@ routerUser.post('/twilio/sendcode', async (req, res) => {
     res.json({ 
       success: false,
       message: error.message,
-      status: error.status
+      status: error.status,
+      error
     })
   }
 })

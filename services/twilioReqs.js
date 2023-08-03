@@ -20,6 +20,7 @@ const postRequest = async (phoneNumber) => {
     return data
 
   } catch (error) {
+    console.log(error)
     return error
   }
 }

@@ -8,11 +8,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start-api":  "node ./pages/api/index.js",
+    "start-api": "node ./pages/api/index.js",
     "server": "nodemon ./pages/api/index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.10.5",
     "cors": "^2.8.5",
