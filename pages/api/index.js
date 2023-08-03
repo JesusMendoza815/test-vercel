@@ -3,12 +3,12 @@ import dbConnect from './libs/db.js';
 import { server } from './server.js';
 
 // No es necesario leer el puerto de process.env, Vercel manejará el puerto automáticamente.
-// Elimina la línea que contiene "SERVER_PORT".
+// Eliminar la línea que contiene "SERVER_PORT".
 
 //Archivo principal para conexión del server
 dbConnect()
   .then(() => {
-    // No es necesario pasar un puerto aquí, Vercel manejará el servidor por ti.
+    // No es necesario pasar un puerto aquí, Vercel manejará el servidor.
     server.listen((req, res) => {
       res.end('Hello from Express.js on Vercel!')
     });
