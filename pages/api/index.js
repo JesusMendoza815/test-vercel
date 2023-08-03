@@ -2,13 +2,15 @@ import 'dotenv/config'
 import dbConnect from './libs/db.js';
 import { server } from './server.js';
 
-const { SERVER_PORT } = process.env
+// No es necesario leer el puerto de process.env, Vercel manejará el puerto automáticamente.
+// Elimina la línea que contiene "SERVER_PORT".
 
-//Archivo principal para conxion del server
+//Archivo principal para conexión del server
 dbConnect()
   .then(() => {
-    server.listen(SERVER_PORT, () => {
-      console.log(`Server listening on port ${SERVER_PORT}`);
+    // No es necesario pasar un puerto aquí, Vercel manejará el servidor por ti.
+    server.listen((req, res) => {
+      res.end('Hello from Express.js on Vercel!')
     });
   })
   .catch(err => {
