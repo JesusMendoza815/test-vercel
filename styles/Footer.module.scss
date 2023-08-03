@@ -1,0 +1,57 @@
+.footer {
+ 
+  overflow-x: hidden !important;
+  
+}
+
+.list {
+  list-style: none;
+}
+
+.orangeBtn {
+  background-color: #FB7043;
+  border-radius: 10px;
+  color: #FFF;
+  border: none;
+  padding: 5px 15px;
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.orangeBtn:hover {
+  background-color: #c54e27;
+  color: #FFF;
+
+}
+
+.hr {
+  color: #adadad;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.a:active {
+  color: #000000;
+  font-family: Raleway;
+  font-weight: 600;
+
+}
+
+
+.a:visited {
+  color: #000000;
+  font-family: Raleway;
+  font-weight: 600;
+
+}
+
+@media (max-width: 700px) {
+
+  .logo {
+    display: none;
+  }
+
+
+}
