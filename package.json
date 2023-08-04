@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start-api": "node ./pages/api/index.js",
+    "api": "node ./pages/api/index.js",
     "server": "nodemon ./pages/api/index.js"
   },
   "dependencies": {
