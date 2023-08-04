@@ -1,12 +1,11 @@
 import express from 'express'
 import cors from 'cors'
-import bodyParser from 'body-parser'
 import routerUser from './routers/user.router.js'
 
 const server = express()
 
 // Middlewares
-server.use(bodyParser.json())
+server.use(express.json())
 server.use(cors())
 
 // Routers
